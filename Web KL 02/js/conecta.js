@@ -1,5 +1,3 @@
-
-
 $(document).ready( function () {
 	$("#btnAdd").on('click', function(event) {
 		event.preventDefault();
@@ -18,9 +16,9 @@ $(document).ready( function () {
 		//alert(passencriptado);
 	    $.ajax({
         type: "POST",
-        url: "Uc.php",
+        url: "confirmaUSUARIO.html",
         success : function(){
-                window.location.href = "Uc.php?usuario="+usuencriptado+"&password="+passencriptado; 
+                window.location.href = "confirma.php?usuario="+usuencriptado+"&password="+passencriptado; 
 				
 				
         	}
